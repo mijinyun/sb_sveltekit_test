@@ -9,7 +9,7 @@
             loading = true;
             const { error } = await supabase.auth.signInWithOtp({email});
 
-            if (error) throw error;
+            if (error) throw console.log(error);
             alert('Check your email for the login link!');
         } catch (error) {
             if (error instanceof Error) {

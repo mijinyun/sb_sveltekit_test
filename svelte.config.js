@@ -4,11 +4,6 @@ import adapter from '@sveltejs/adapter-vercel';
 const config = {
 	kit: {
 		adapter: adapter(),
-		vite : {
-			define:{
-				'process.env': process.env,
-			},
-		}
 	},
 };
 
