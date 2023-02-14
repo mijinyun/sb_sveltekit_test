@@ -1,7 +1,10 @@
 <script>
+    import { supabase } from '$lib/supabaseClient'
     import { page } from '$app/stores' 
     import Account from "./Account.svelte";
     import Auth from "./Auth.svelte";
+
+    console.log('1:', supabase);
 </script>
 
 <svelte:head>
