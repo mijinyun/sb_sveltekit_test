@@ -4,7 +4,6 @@
     import Account from "./Account.svelte";
     import Auth from "./Auth.svelte";
 
-    console.log('1:', supabase);
 </script>
 
 <svelte:head>
