@@ -5,9 +5,8 @@
     import TodoList from './todoList.svelte'
     import { onMount } from 'svelte';
 
-    // console.log($page);
-    // console.log($page.data);
-    const { user } = $page.data.session;
+    //이부분!!! user 값을 예외처리 해보기!!!!!!
+    // const { user } = $page.data.session;
     let todoText;
     
     let newTodos; 
@@ -17,9 +16,9 @@
     ])
     // console.log('new:',newTodos);
 
-    onMount(() => {
-        getList()
-    })
+    // onMount(() => {
+    //     getList()
+    // })
 
     const getList = async () => {
         try {
